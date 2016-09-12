@@ -1,4 +1,8 @@
-"use strict";
+(function (global, factory) {
+    typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+    typeof define === 'function' && define.amd ? define('controller.js', factory) :
+    (global.Controller = factory());
+}(this, (function () { 'use strict';
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 
@@ -1197,3 +1201,7 @@ Controller.globalSettings.register(new GC_Setting("useAnalogAsDpad", "none", fun
         return null;
     }
 }));
+
+return Controller;
+
+})));
