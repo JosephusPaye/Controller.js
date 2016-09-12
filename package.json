@@ -1,11 +1,12 @@
 {
-  "name": "Controller.js",
+  "name": "controller.js",
   "version": "1.0.0",
   "description": "A library designed to make the Gamepad API easier to use for non-gaming applications.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/samiare/Controller.js.git"
+    "url": "git+https://github.com/JosephusPaye/Controller.js.git"
   },
+  "main": "dist/Controller.js",
   "keywords": [
     "Gamepad",
     "API",
