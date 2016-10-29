@@ -10,6 +10,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 function Controller(HTMLgamepad) {
     "use strict";
 
+    if (HTMLgamepad === null || HTMLgamepad === undefined) {
+        return false;
+    }
+
     if (HTMLgamepad.constructor.name !== "Gamepad") {
         return false;
     }
