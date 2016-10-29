@@ -10,10 +10,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 function Controller(HTMLgamepad) {
     "use strict";
 
-    if (HTMLgamepad === null || HTMLgamepad === undefined) {
-        return false;
-    }
-
     if (HTMLgamepad.constructor.name !== "Gamepad") {
         return false;
     }
@@ -758,7 +754,7 @@ Controller.search = function (options) {
             if (isNaN(index)) {
                 return;
             }
-            if (this.gamepads[index] !== undefined && this.getController(index) === undefined) {
+            if (this.gamepads[index] !== null && this.gamepads[index] !== undefined && this.getController(index) === undefined) {
                 if (!this.controllers) {
                     this.controllers = {};
                 }
